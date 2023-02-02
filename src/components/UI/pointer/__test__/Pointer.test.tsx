@@ -13,7 +13,7 @@ const renderComponent = () => {
 };
 
 describe('GamePointer component testing', () => {
-  test('pointer should move on based on colunm number', async () => {
+  test('pointer should move on based on column number', async () => {
     store.dispatch(setPointercolumn('3'));
     renderComponent();
 
@@ -22,7 +22,7 @@ describe('GamePointer component testing', () => {
     expect(pointer).toHaveStyle('grid-area: d');
   });
 
-  test('color of pointer should be red initaly', () => {
+  test('color of pointer should be red initially', () => {
     renderComponent();
 
     const pointerColor = screen.getByTestId('color-red');

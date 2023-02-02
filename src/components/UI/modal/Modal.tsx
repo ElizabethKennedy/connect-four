@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { createPortal } from 'react-dom';
 
-import { backdropVariants } from '../../../frameMotinVariats/frameMotionVariants';
+import { backdropVariants } from '../../../frameMotionVariants/frameMotionVariants';
 
 import { Wrapper, Backdrop } from './ModalsStyles';
 

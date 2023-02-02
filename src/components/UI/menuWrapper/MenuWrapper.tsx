@@ -4,7 +4,7 @@ import { MenuWrap } from './MenuWrapperStyles';
 import {
   wrapperVariants,
   modalVariants,
-} from '../../../frameMotinVariats/frameMotionVariants';
+} from '../../../frameMotionVariants/frameMotionVariants';
 
 const MenuWrapper: React.FC<{ children?: JSX.Element; type: string }> = ({
   children,
