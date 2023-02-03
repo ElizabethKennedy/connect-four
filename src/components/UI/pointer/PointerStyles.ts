@@ -37,7 +37,7 @@ export const PointerWrapper = styled.div`
 `;
 
 export const Pointer = styled.div<props>`
-  grid-area: ${({ columnNumber }) => positions[columnNumber]};
+  grid-area: ${({ columnnumber }) => positions[columnnumber]};
   display: flex;
   justify-content: center;
 `;
