@@ -23,7 +23,7 @@ import {
   const localStorageMiddleware: Middleware = ({ getState }) => {
     return (next) => (action) => {
       const result = next(action);
-      localStorage.setItem('connectFourGameSettigns', JSON.stringify(getState()));
+      localStorage.setItem('connectFourGameSettings', JSON.stringify(getState()));
       return result;
     };
   };
