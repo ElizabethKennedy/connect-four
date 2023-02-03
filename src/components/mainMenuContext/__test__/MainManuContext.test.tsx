@@ -42,7 +42,7 @@ describe('Main menu context testing', () => {
     expect(rulesBtn).not.toBeNull();
   });
 
-  test('should start game after clickin pvp btn', () => {
+  test('should start game after click in pvp btn', () => {
     const navigate = jest.fn();
     // @ts-ignore
     useNavigate.mockReturnValue(navigate);

@@ -22,7 +22,7 @@ describe('Rules context component testing', () => {
     expect(rules).not.toBeNull();
   });
 
-  test('should call navigate after cliking btn', () => {
+  test('should call navigate after clicking btn', () => {
     const navigate = jest.fn();
     // @ts-ignore
     useNavigate.mockReturnValue(navigate);

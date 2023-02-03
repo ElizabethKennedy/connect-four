@@ -54,8 +54,8 @@ describe('Winner component', () => {
       },
     });
 
-    const playAgaintBtn = screen.getByText('Play Again');
-    fireEvent.click(playAgaintBtn);
+    const playAgainstBtn = screen.getByText('Play Again');
+    fireEvent.click(playAgainstBtn);
     const { winner } = store.getState().game;
     expect(winner).toBeNull();
   });

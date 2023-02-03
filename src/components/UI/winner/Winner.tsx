@@ -17,7 +17,7 @@ const Winner: React.FC = () => {
   let status = 'tie';
   if (game.winner && game.winner !== 'tie') {
     name = game[game.winner].name;
-    // check for gramma
+    // check 
     status = name === 'You' ? 'win' : 'wins';
   }
 

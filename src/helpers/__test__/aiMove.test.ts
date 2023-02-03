@@ -26,7 +26,7 @@ const grid3: counter[][] = [
   ['red', 'yellow', 'red', null, null, 'red', null],
 ];
 
-describe('aiMove testting', () => {
+describe('aiMove testing', () => {
   test('should place counter in 0 column for grid 1', () => {
     const move = maximizePlay(grid1, 2, 100000, 0);
     expect(move[0]).toBe(0);

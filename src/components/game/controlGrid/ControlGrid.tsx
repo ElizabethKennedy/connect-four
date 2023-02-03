@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { Control, Column } from './ControlGridStlyes';
+import { Control, Column } from './ControlGridStyles';
 import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 import {
   makeMove,
@@ -33,7 +33,7 @@ const ControlGrid: React.FC = () => {
     e: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
     dispatch(
-      setPointercolumn(e.currentTarget.getAttribute('data-columnnum') || '0')
+      setPointercolumn(e.currentTarget.getAttribute('data-columnNum') || '0')
     );
   };
 
@@ -43,7 +43,7 @@ const ControlGrid: React.FC = () => {
   ) => {
     e.stopPropagation();
     if (currentPlayer === 'p2' && gameMode === 'CPUvP') return;
-    const col = e.currentTarget.getAttribute('data-columnnum');
+    const col = e.currentTarget.getAttribute('data-columnNum');
     if (col) {
       dispatch(makeMove(+col));
     }
@@ -56,7 +56,7 @@ const ControlGrid: React.FC = () => {
         return (
           <Column
             key={ind}
-            data-columnnum={ind}
+            data-columnNum={ind}
             onMouseEnter={mouseHoverHandler}
             onClick={columnClickHandler}
             data-testid={`column${ind}`}

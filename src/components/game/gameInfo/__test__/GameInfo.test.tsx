@@ -16,7 +16,7 @@ describe('GameInfo component testing', () => {
     const gameInfo = screen.queryByTestId('gameInfo');
     expect(gameInfo).not.toBeNull();
   });
-  test('should render timer component iniitaly', () => {
+  test('should render timer component initially', () => {
     render(
       <Provider store={store}>
         <GameInfo />

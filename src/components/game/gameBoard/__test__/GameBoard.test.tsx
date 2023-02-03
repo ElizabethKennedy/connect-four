@@ -14,7 +14,7 @@ describe('Game board component testing', () => {
         <GameBoard />
       </Provider>
     );
-    const gameBaord = screen.queryByTestId('gameBoard');
-    expect(gameBaord).not.toBeNull();
+    const gameBoard = screen.queryByTestId('gameBoard');
+    expect(gameBoard).not.toBeNull();
   });
 });

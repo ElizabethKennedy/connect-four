@@ -8,7 +8,7 @@ import { ReactComponent as WhiteLayoutLarge } from '../../../assets/images/board
 import { ReactComponent as BlackLayoutLarge } from '../../../assets/images/board-layer-black-large.svg';
 import { ReactComponent as WhiteLayoutSmall } from '../../../assets/images/board-layer-white-small.svg';
 import { ReactComponent as BlackLayoutSmall } from '../../../assets/images/board-layer-black-small.svg';
-import { boardVariants } from '../../../frameMotinVariats/frameMotionVariants';
+import { boardVariants } from '../../../frameMotionVariants/frameMotionVariants';
 
 import CounterGrid from '../counterGrid/CounterGrid';
 import ControlGrid from '../controlGrid/ControlGrid';

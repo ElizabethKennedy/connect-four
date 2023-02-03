@@ -11,7 +11,7 @@ jest.mock('../../../../store/hooks', () => ({
   useAppDispatch: jest.fn(),
 }));
 
-describe('Timer componet testing', () => {
+describe('Timer component testing', () => {
   test('should render your turn if current player is player and it is cpu v p mode', () => {
     const preloadedStore = setupStore();
     const { game } = preloadedStore.getState();
@@ -47,7 +47,7 @@ describe('Timer componet testing', () => {
     expect(name).toHaveTextContent("CPU's turn");
   });
 
-  test('should render 30s iniialy', () => {
+  test('should render 30s initially', () => {
     renderWithProviders(<Timer />);
     const name = screen.getByRole('heading', { level: 2 });
     expect(name).toHaveTextContent('30s');

@@ -56,8 +56,8 @@ describe('Control Grid component testing', () => {
     const dispatch = jest.fn();
     // @ts-ignore
     useAppDispatch.mockReturnValue(dispatch);
-    const preLoadedstore = setupStore();
-    const { game } = preLoadedstore.getState();
+    const preLoadedStore = setupStore();
+    const { game } = preLoadedStore.getState();
     const { store } = renderWithProviders(<ControlGrid />, {
       preloadedState: {
         game: {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { TimerWrapper, PlayerName, Time } from './TimerStlyes';
+import { TimerWrapper, PlayerName, Time } from './TimerStyles';
 
 import TurnRed from '../../../assets/images/turn-background-red.svg';
 import TurnYellow from '../../../assets/images/turn-background-yellow.svg';
